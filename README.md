@@ -62,7 +62,7 @@ En html se puede habilitar para forzar un archivo js con lo siguiente:
 Esto hace que solo quede dentro del ambito del archivo sus variable. Ademas, costara acceder desde la consola a las variables.
 
 ### Export
-Para JS. En el archivo de la clase se usa el export. Es independiente del HTML.
+Para JS. En el archivo de la clase se usa el export.
 ```js
 function MediaPlayer(config) {
     //...
@@ -72,9 +72,9 @@ export default MediaPlayer;
 ```
 
 ### Import
-En el archivo donde se quiera utilizar
+En el archivo donde se quiera utilizar. Para usarlo es necesario usar el type="module" en el HTML.
 ```js
-import MediaPlayer from './MediaPlayer';
+import MediaPlayer from '/src/js/MediaPlayer.js';
 
 const player = new MediaPlayer(...);
 
