@@ -94,3 +94,37 @@ import {foo} from "./...";
 - Block Scope
 - Module Scope
 
+## IIFE (Inmediate Invoke Function Expresion)
+```js
+(function() {...})()
+```
+
+## Variables Privadas con Closure
+Hacemos un scope de funcion que retorne una funcion que es la unica que puede acceder a las variables en el ambito de la primera funcion.
+```js
+function CofreEnc(val) {
+    let almacenado = val;
+
+    return function() {
+        console.log(hash(val));
+    };
+}
+
+CofreEnc("mi secreto")();
+```
+
+Más interactivo:
+```js
+function makeCounter(n){
+    let count = n;
+    return {
+        increase: function() {},
+        decrease: function() {},
+        getCount: function() {}
+    }
+}
+
+let counter = makeCounter(0);
+counter.increase();
+counter.getCount();
+```
