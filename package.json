@@ -1,0 +1,17 @@
+{
+  "name": "js-pro",
+  "version": "1.0.0",
+  "description": "Proycto del curso Profesional de JavaScript de la escuela de Platzi",
+  "main": "./src/html/index.html",
+  "scripts": {
+    "start2" : "live-server ./src/html/index.html",
+    "start" : "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "SetHet sethet1@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
