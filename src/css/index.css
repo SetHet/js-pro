@@ -1,8 +1,18 @@
-* {
-    background-color: aquamarine;
+body {
+    background-image: radial-gradient(circle at 36.29% -1.17%, #ffac4f 0, #ffb73a 5%, #ffc122 10%, #ffcb00 15%, #ffd400 20%, #ffdc00 25%, #f0e300 30%, #d9ea00 35%, #c1f00c 40%, #a6f52e 45%, #88f946 50%, #62fd5d 55%, #17ff74 60%, #00ff8b 65%, #00ffa3 70%, #00ffbb 75%, #00ffd4 80%, #00ffec 85%, #00ffff 90%, #00ffff 95%, #00ffff 100%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 video {
-    max-width: 100%;
-    max-height: 80vh;
+    width: 100%;
+}
+
+.container {
+    background: #cc1717;
 }
